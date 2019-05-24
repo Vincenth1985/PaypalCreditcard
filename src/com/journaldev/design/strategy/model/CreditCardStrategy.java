@@ -1,4 +1,4 @@
-package com.journaldev.design.strategy;
+package com.journaldev.design.strategy.model;
 
 import com.journaldev.design.strategy.services.PaymentStrategy;
 

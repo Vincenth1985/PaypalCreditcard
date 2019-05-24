@@ -1,4 +1,4 @@
-package com.journaldev.design.strategy;
+package com.journaldev.design.strategy.model;
 
 public class Item {
 
@@ -16,5 +16,13 @@ public class Item {
 
     public int getPrice() {
         return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "upcCode='" + upcCode + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
