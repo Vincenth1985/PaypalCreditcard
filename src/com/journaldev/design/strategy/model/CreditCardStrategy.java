@@ -20,6 +20,7 @@ public class CreditCardStrategy implements PaymentStrategy {
 
     @Override
     public void pay(int x) {
+        System.out.println(x + " Betaling met CreditKaart.");
 
     }
 }

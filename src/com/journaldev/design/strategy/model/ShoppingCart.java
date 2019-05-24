@@ -38,7 +38,7 @@ public class ShoppingCart {
     }
 
     public void pay(PaymentStrategy paymentStrategy) {
-
+        paymentStrategy.pay(calculateTotal());
 
     }
 

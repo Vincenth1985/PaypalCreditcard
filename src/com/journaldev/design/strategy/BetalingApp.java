@@ -1,7 +1,10 @@
 package com.journaldev.design.strategy;
 
+import com.journaldev.design.strategy.model.CreditCardStrategy;
 import com.journaldev.design.strategy.model.Item;
+import com.journaldev.design.strategy.model.PaypalStrategy;
 import com.journaldev.design.strategy.model.ShoppingCart;
+import com.journaldev.design.strategy.services.PaymentStrategy;
 
 
 public class BetalingApp {
@@ -17,6 +20,21 @@ public class BetalingApp {
         shoppingCart.getItemslist().stream()
                 .forEach(System.out::println);
 
+        System.out.println("Total Amount : " + shoppingCart.calculateTotal() + "€");
+
+
+//        shoppingCart.pay(new CreditCardStrategy("Vincent", "323232", "RE3", "24556"));
+//        shoppingCart.pay(new PaypalStrategy("Vincenth1985@gmail.com", "323232"));
+
+
+        shoppingCart.pay(new PaymentStrategy() {
+            @Override
+            public void pay(int x) {
+                new CreditCardStrategy("Vincent", "323232", "RE3", "24556").pay(x);
+
+            }
+        });
 
     }
+
 }
