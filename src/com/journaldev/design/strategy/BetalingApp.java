@@ -35,6 +35,12 @@ public class BetalingApp {
             }
         });
 
+/*
+        shoppingCart.pay((x)-> new PaypalStrategy("vincenth1985@gmail.com ","32323").pay(x));
+*/
+        shoppingCart.pay(new PaypalStrategy("vincenth1985@gmail.com ","32323")::pay);
+
+
     }
 
 }
