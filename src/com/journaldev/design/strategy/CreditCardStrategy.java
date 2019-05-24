@@ -4,10 +4,10 @@ import com.journaldev.design.strategy.services.PaymentStrategy;
 
 public class CreditCardStrategy implements PaymentStrategy {
 
-    String name;
-    String cardNumber;
-    String cvv;
-    String dateOfExpiry;
+    private String name;
+    private String cardNumber;
+    private String cvv;
+    private String dateOfExpiry;
 
 
     public CreditCardStrategy(String name, String cardNumber, String cvv, String dateOfExpiry) {
