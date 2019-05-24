@@ -1,5 +1,7 @@
 package com.journaldev.design.strategy;
 
+import com.journaldev.design.strategy.services.PaymentStrategy;
+
 public class ShoppingCart {
 
     Item item;

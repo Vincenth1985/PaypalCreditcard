@@ -1,4 +1,4 @@
-package com.journaldev.design.strategy;
+package com.journaldev.design.strategy.services;
 
 public interface PaymentStrategy {
 
